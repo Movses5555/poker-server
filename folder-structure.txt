@@ -1,0 +1,61 @@
+.
+├── config.js
+├── folder-structure.txt
+├── migration-config.js
+├── migrations
+│   ├── 1744803550567_create-settings-table.js
+│   ├── 1744806060686_create-players-table.js
+│   └── 1744807736167_create-hands-table.js
+├── nodemon.json
+├── package.json
+├── package-lock.json
+├── src
+│   ├── config
+│   │   └── db.ts
+│   ├── controllers
+│   │   └── user.controller.ts
+│   ├── di
+│   │   ├── inversify.config.ts
+│   │   └── types.ts
+│   ├── errors
+│   │   ├── domain.error.ts
+│   │   ├── unauthorized.error.ts
+│   │   └── validations.error.ts
+│   ├── index.ts
+│   ├── middlewares
+│   │   └── error-handler.middleware.ts
+│   ├── models
+│   │   ├── access-token-payload.ts
+│   │   ├── auth-credentials.ts
+│   │   ├── boost-block.model.ts
+│   │   ├── mining.model.ts
+│   │   ├── telegram-user.ts
+│   │   ├── upgrade-block.model.ts
+│   │   ├── user-boost-block.model.ts
+│   │   ├── user.ts
+│   │   └── user-upgrade-block.model.ts
+│   ├── repositories
+│   │   ├── auth-repository.ts
+│   │   ├── base-repository.ts
+│   │   ├── interfaces
+│   │   │   ├── IAuthRepository.ts
+│   │   │   ├── IBaseRepository.ts
+│   │   │   └── IRepository.ts
+│   │   └── repository.ts
+│   ├── requests
+│   │   ├── auth
+│   │   │   └── auth-base.request.ts
+│   │   └── global.request.ts
+│   ├── services
+│   │   ├── interfaces
+│   │   │   ├── IMiningService.ts
+│   │   │   ├── ISettingsService.ts
+│   │   │   └── IUserService.ts
+│   │   ├── mining.service.ts
+│   │   ├── settings.service.ts
+│   │   └── user.service.ts
+│   └── utils
+│       └── random-generator.ts
+└── tsconfig.json
+
+15 directories, 43 files
